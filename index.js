@@ -10,3 +10,8 @@ setInterval(()=>{
   console.log("hello there set intervel time is 1 sec")
 }, 1000)
 // Modules
+
+const sayHi = (name) =>{
+  console.log(`Hello there ${name} `)
+}
+sayHi('yuvraj ')
