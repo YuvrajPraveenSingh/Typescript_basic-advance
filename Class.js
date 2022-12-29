@@ -62,11 +62,34 @@ var Manager = /** @class */ (function (_super) {
     }
     return Manager;
 }(Employee));
+// example code 
+var Thing = /** @class */ (function () {
+    function Thing() {
+        this._size = 0;
+    }
+    Object.defineProperty(Thing.prototype, "size", {
+        get: function () {
+            return this._size;
+        },
+        set: function (value) {
+            var num = Number(value);
+            // Don't allow NaN, Infinity, etc
+            if (!Number.isFinite(num)) {
+                this._size = 0;
+                return;
+            }
+            this._size = num;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    return Thing;
+}());
 // driver code 
-var raj = new Manager(2, "raj sigal", "marine drive , mumbai");
-var yuvraj = new Employee(1, "yuvraj Singh", "earth milkyWay");
+var raj = new Manager(2, "raj sigal", { street: "ABC", city: "bangalore", state: "karnatak", pin: 59001 });
+var yuvraj = new Employee(1, "yuvraj Singh", { street: "XYZ", city: "mumbai", state: "Maharasta", pin: 55986 });
 console.log(yuvraj);
-var res = yuvraj.getName();
+var res = yuvraj.address;
 console.log(res);
 console.log(raj.getName());
 console.log(Employee.emplyeeCount());
