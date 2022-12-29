@@ -1,11 +1,9 @@
-function add(a, b ){
-  return a+ b
-}
+
 function Add(a : number , b : number) : number
   {
     return a+ b;
   }
-console.log( add(3 ,'33'), Add(3 ,33));
+console.log( Add(3 ,33));
 
 const sub = (n1 : number , n2 : number ):number => n1 - n2 ;
 const mult = function(n1 : number , n2 : number) :number{

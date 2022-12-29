@@ -14,11 +14,11 @@ let empList : string[];
 let depList : Array<number>;
 empList = ['hey', 'hello,' , 'hi'];
 depList =[1,5,68,26];
-let res = depList.filter((num) => num>50);  // fillter method
+let REs = depList.filter((num) => num>50);  // fillter method
 let result = depList.find((num) => num === 26); // find Method
 let rs = depList.findIndex((num) => num ===5)
 let r = depList.reduce((acc , num ) => acc + num );
-console.log(res);
+console.log(REs);
 console.log(result);
 console.log(rs);
 console.log(r);

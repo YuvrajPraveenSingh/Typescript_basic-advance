@@ -68,8 +68,8 @@ let yuvraj : Employee = new Employee(1 , "yuvraj Singh" ,  {
   pin : 55986} );
 
 console.log(yuvraj);
- let res =yuvraj.address;
-console.log(res);
+ let Res =yuvraj.address;
+console.log(Res);
 console.log(raj.getName());
 console.log(Employee.emplyeeCount())
 
