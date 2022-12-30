@@ -20,6 +20,11 @@ const User : IUser[] = [
     age : 37,
     occupation : "user"
   },
+  {
+    name : 'bob',
+    age : 16,
+    occupation : "user"
+  }
 ]
 
  class User_Detail{
@@ -50,10 +55,13 @@ const User : IUser[] = [
    }
  }
 
-let obj = new User_Detail({
-    name : 'bob',
-    age : 16,
-    occupation : "user"
-  })
+ for(let key in User){
+   let vat  =  `obj${key}`
+   vat = new User_Detail({
+    name : User[key].name,
+    age : User[key].age,
+    occupation : User[key].occupation
+   });
+   console.log(vat)
+ }
 
-console.log(obj.user.age);
