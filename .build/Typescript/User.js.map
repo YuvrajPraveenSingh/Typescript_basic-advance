@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../Typescript/User.ts"],
+  "sourcesContent": ["interface IUser{\n  name : string;\n  age: number;\n  occupation : string;\n}\n\nconst User : IUser[] = [\n  {\n    name : 'alice',\n    age : 25,\n    occupation : \"user\"\n  },\n  {\n    name : 'bob',\n    age : 16,\n    occupation : \"user\"\n  },\n  {\n    name : 'sus',\n    age : 37,\n    occupation : \"user\"\n  },\n]\n\nfunction user_info(User :IUser[]){\n  User.forEach(function(User): void{\n    console.log(User.name)\n  })\n}\n\nuser_info(User);"],
+  "mappings": ";AAMA,MAAM,OAAiB;AAAA,EACrB;AAAA,IACE,MAAO;AAAA,IACP,KAAM;AAAA,IACN,YAAa;AAAA,EACf;AAAA,EACA;AAAA,IACE,MAAO;AAAA,IACP,KAAM;AAAA,IACN,YAAa;AAAA,EACf;AAAA,EACA;AAAA,IACE,MAAO;AAAA,IACP,KAAM;AAAA,IACN,YAAa;AAAA,EACf;AACF;AAEA,SAAS,UAAUA,OAAc;AAC/B,EAAAA,MAAK,QAAQ,SAASA,OAAW;AAC/B,YAAQ,IAAIA,MAAK,IAAI;AAAA,EACvB,CAAC;AACH;AAEA,UAAU,IAAI;",
+  "names": ["User"]
+}

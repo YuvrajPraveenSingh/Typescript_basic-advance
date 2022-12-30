@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../Typescript/module_ecapsulation/sayHi.js"],
+  "sourcesContent": ["const name = require('../module_ecapsulation/names')\nconsole.log(name);\n\nfunction sayHi(name) {\n    console.log(`Hello there ${name} `)\n}\nsayHi('yuvraj ')\nsayHi(name.john)"],
+  "mappings": ";AAAA,MAAM,OAAO,QAAQ,8BAA8B;AACnD,QAAQ,IAAI,IAAI;AAEhB,SAAS,MAAMA,OAAM;AACjB,UAAQ,IAAI,eAAeA,QAAO;AACtC;AACA,MAAM,SAAS;AACf,MAAM,KAAK,IAAI;",
+  "names": ["name"]
+}

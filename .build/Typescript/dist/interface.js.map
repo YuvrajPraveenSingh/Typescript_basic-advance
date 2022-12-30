@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../Typescript/dist/interface.js"],
+  "sourcesContent": ["\"use strict\";\nexports.__esModule = true;\n"],
+  "mappings": ";AACA,QAAQ,aAAa;",
+  "names": []
+}

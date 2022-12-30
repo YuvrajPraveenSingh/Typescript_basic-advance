@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../Typescript/module_ecapsulation/names.js"],
+  "sourcesContent": ["//  local var \nconst secret = \" top secret\"\n\n//  shared or exported var...\nconst john = \"John\" ;\nconst peter = \"peter\";\nconst sushi = \"sushi\";\n\nmodule.exports ={\n  john,\n  peter,\n  sushi\n}\nconsole.log(module)"],
+  "mappings": ";AACA,MAAM,SAAS;AAGf,MAAM,OAAO;AACb,MAAM,QAAQ;AACd,MAAM,QAAQ;AAEd,OAAO,UAAS;AAAA,EACd;AAAA,EACA;AAAA,EACA;AACF;AACA,QAAQ,IAAI,MAAM;",
+  "names": []
+}
