@@ -1,4 +1,7 @@
-var User = [
+"use strict";
+exports.__esModule = true;
+exports.User = void 0;
+exports.User = [
     {
         name: 'alice',
         age: 25,
@@ -14,6 +17,11 @@ var User = [
         age: 37,
         occupation: "user"
     },
+    {
+        name: 'bob',
+        age: 16,
+        occupation: "user"
+    }
 ];
 var User_Detail = /** @class */ (function () {
     function User_Detail(user) {
@@ -51,9 +59,11 @@ var User_Detail = /** @class */ (function () {
     });
     return User_Detail;
 }());
-var obj = new User_Detail({
-    name: 'bob',
-    age: 16,
-    occupation: "user"
-});
-console.log(obj.user.age);
+for (var key in exports.User) {
+    var vat = new User_Detail({
+        name: exports.User[key].name,
+        age: exports.User[key].age,
+        occupation: exports.User[key].occupation
+    });
+    console.log("".concat(vat.user.name, " , ").concat(vat.user.age, " "));
+}
