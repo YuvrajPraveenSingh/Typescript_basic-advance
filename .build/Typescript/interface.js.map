@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../Typescript/interface.ts"],
+  "sourcesContent": [" export interface user {\n  name : string;\n  age? : number; // use ? to make a property optional ....\n  id : number;\n  email : String;\n}\n\n export interface address {\n  street : string ;\n  city : string ;\n  state : string;\n  pin : number;\n}\n\nexport interface Employees extends user {\n  department : string;\n  teamNo? : number;\n  salary : number;\n}\n\n\n"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;",
+  "names": []
+}
