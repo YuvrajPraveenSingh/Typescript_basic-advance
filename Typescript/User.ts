@@ -1,10 +1,6 @@
-interface IUser{
-  name : string;
-  age: number;
-  occupation : string;
-}
+import { IUser } from "./User_interface";
 
-const User : IUser[] = [
+export const User : IUser[] = [
   {
     name : 'alice',
     age : 25,
@@ -56,12 +52,11 @@ const User : IUser[] = [
  }
 
  for(let key in User){
-   let vat  =  `obj${key}`
-   vat = new User_Detail({
+   let vat = new User_Detail({
     name : User[key].name,
     age : User[key].age,
     occupation : User[key].occupation
    });
-   console.log(vat)
+   console.log(`${vat.user.name} , ${vat.user.age} `)
  }
 
