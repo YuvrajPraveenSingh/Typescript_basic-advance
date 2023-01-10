@@ -12,6 +12,7 @@
   "dependencies": {
     "@angular/cli": "^15.0.4",
     "@types/node": "^18.0.6",
-    "node-fetch": "^3.2.6"
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.0"
   }
 }
